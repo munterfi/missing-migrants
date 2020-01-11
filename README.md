@@ -1,5 +1,4 @@
-# Missing Migrants
-Visualization of IOM's Missing Migrants Project data.
+# Missing Migrants (2014-2019)
 ![](docs/migration_2014_2019.gif)
 Description of the data set by Missingmigrants.iom.int (2020): *“Missing Migrants Project tracks deaths of migrants, including refugees and asylum-seekers, who have died or gone missing in the process of migration towards an international destination. Please note that these data represent minimum estimates, as many deaths during migration go unrecorded.”*
 
@@ -19,7 +18,7 @@ source("R/anim_plot.R")
 source("R/write_anim.R") 
 ```
 
-### Read & preprocess data
+### Read & preprocess
 ``` r
 mig <- prep_data("data/MissingMigrants-Global-2020-01-08T14-05-32.csv")
 ```
