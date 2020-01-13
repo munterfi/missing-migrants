@@ -12,7 +12,7 @@
 # install.packages("sf")
 
 # Funcs
-source("R/prep_data.R") 
+source("R/prep_data.R")
 source("R/anim_plot.R")
 source("R/write_anim.R") 
 
@@ -23,7 +23,7 @@ mig <- prep_data("data/MissingMigrants-Global-2020-01-08T14-05-32.csv")
 title <- 
   'Migration {frame_time}: Dead and missing persons'
 subtitle <- 
-  "Displayed is the geographic centroid of the incidents per region and year."
+  "Displayed is the weighted geographic centroid of the incidents per region and year."
 caption <- 
   "© munterfinger.ch, author: @munterfi1, data: missingmigrants.iom.int"
 gplot <- anim_plot(mig,title, subtitle, caption)
